@@ -54,7 +54,7 @@ case $COMMAND in
 
     macros)
         if CHOICE="$(awk -F"	" '{print $1}' "$HOTKEYDIR/choices/macros" | $CHOOSE $CHOOSE_FLAGS)"; then
-            grep "$CHOICE" "$HOTKEYDIR/macros" | awk -F"	" '{for (i=2; i<NF; i++) printf $i " "; print $NF}' | "$SHELL"
+            grep "$CHOICE" "$HOTKEYDIR/choices/macros" | awk -F"	" '{for (i=2; i<NF; i++) printf $i " "; print $NF}' | "$SHELL"
         fi
         ;;
 
