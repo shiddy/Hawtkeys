@@ -1,0 +1,1 @@
+Make ~/blah file	echo "this is the file contents" > $HOME/blah	
